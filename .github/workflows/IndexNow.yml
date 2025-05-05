@@ -5,7 +5,7 @@ on:
       - main
   schedule:
     # 每3天的 UTC 时间 04:00 运行一次
-    - cron: '5 * * * *'
+    - cron: '0 3 * * *'
 jobs:
   check-and-submit:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
           sitemap-location: "https://yunpan4k.cn/sitemap.xml"
           endpoint: "www.bing.com"
           since: 1
-          since-unit: "hour"
+          since-unit: "day"
           limit: 10
           key: ${{ secrets.INDEXNOW_KEY }}
           key-location: ${{ secrets.INDEXNOW_KEY_LOCATION }}
