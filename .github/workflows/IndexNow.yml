@@ -5,7 +5,7 @@ on:
       - main
   schedule:
     # 每3天的 UTC 时间 04:00 运行一次
-    - cron: '0 0/5 * * * ?'
+    - cron: '0 0 0/1 * * ?'
 jobs:
   check-and-submit:
     runs-on: ubuntu-latest
