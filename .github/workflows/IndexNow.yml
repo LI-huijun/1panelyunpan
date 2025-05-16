@@ -13,10 +13,10 @@ jobs:
       - name: submit-to-bing
         uses: bojieyang/indexnow-action@v2
         with:
-          sitemap-location: "https://yunpan4k.cn/sitemap.xml"
+          sitemap-location: "https://yunpan4k.com/sitemap.xml"
           endpoint: "www.bing.com"
           since: 1
           since-unit: "day"
-          limit: 100
+          limit: 300
           key: ${{ secrets.INDEXNOW_KEY }}
           key-location: ${{ secrets.INDEXNOW_KEY_LOCATION }}
